@@ -1,0 +1,14 @@
+Creating a new geodatabase through Python scripting 
+
+import os
+import sys
+import arcpy
+
+# Set Workspace
+env.workspace = "G:\env\WORKSPACE\Matthew"
+
+# Set local variables 
+out_folder_path = "G:\env\WORKSPACE\Matthew"
+out_name = "NEWgeodatabase.gdb"
+
+arcpy.CreateFileGDB_management(out_folder_path, out_name)
